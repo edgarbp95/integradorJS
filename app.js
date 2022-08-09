@@ -70,12 +70,21 @@ series.addEventListener('click',e=>{
         }, "Series","/series");
     })
 
- 
+
+    const reload = ()=>{
+        location
+    }
 
 const viewing = ()=>{
 
     const coincidencia = catalogo.filter(item=>("/"+item.id === window.location.pathname
     ))
+    
+    addEventListener("popstate",(e)=>{
+        if(e.isTrusted){
+            location.reload()
+        }
+    })
     
     console.log(coincidencia)
     
@@ -89,6 +98,7 @@ const viewing = ()=>{
     } else if(window.location.pathname === "/login"){
         content.innerHTML = "puto"
     } else if(window.location.pathname === "/"+coincidencia[0].id){
+        
         let templateSeries= 
         `
           <div class="container">
@@ -116,6 +126,7 @@ const viewing = ()=>{
           </div>
           ` 
         content.innerHTML = templateSeries;
+        
     }
 }
 
