@@ -92,9 +92,9 @@ const viewing = ()=>{
         let templateSeries= 
         `
           <div class="container">
-              <div class="p-5 mb-4 bg-light rounded-3">
-              <div class="img-serie py-5">
-                  <img src=${coincidencia[0].url}>
+              <div class="p-5 bg-transparent rounded-3">
+              <div class="img-serie">
+                  <img class="rounded-3" src=${coincidencia[0].url}>
               </div>
               </div>
   
@@ -106,10 +106,10 @@ const viewing = ()=>{
                   </div>
               </div>
               <div class="col-md-6">
-                  <div class="h-100 p-5 bg-light border rounded-3">
+                  <div class="h-70 p-5 bg-light border rounded-3">
                   <h2>Info</h2>
                   <p>Autor: ${coincidencia[0].autor}</p>
-                  <p>Temporadas: ${coincidencia[0].temp}</p>
+                  <p>Temporadas: ${coincidencia[0].temporadas}</p>
                   </div>
               </div>
           

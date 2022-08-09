@@ -95,10 +95,6 @@ const Home = () =>{
             <div class="col-lg-6 col-md-8 mx-auto">
               <h1 class="fw-light text-white">Unete a una comunidad activa</h1>
               <p class="lead text-white">Encuentra información detallada de tus series y peliculas favoritas. Comparte tu valoración y ayuda a otros wikinautas a encontrar el mejor contenido.</p>
-              <p>
-                <a href="#" class="btn btn-primary my-2">Login</a>
-                <a href="#" class="btn btn-dark my-2">Register</a>
-              </p>
             </div>
           </div>
         </section>
