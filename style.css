@@ -170,7 +170,9 @@ label{
     width: 100%;
   }
  
-  
+  .loginForm{
+    width: 90%;
+  }
 
   #banner h1{
     font-size: 22px;
