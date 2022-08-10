@@ -70,14 +70,14 @@ const expresiones ={
 const menuHambur = document.querySelector(".menu-hambur")
 let menuActive = false;
 menuHambur.addEventListener("click",()=>{
-    if(!menuActive){
-        menuHambur.classList.add("active")
-        menuActive = true;
-    } else {
-        menuHambur.classList.remove("active");            
-        menuActive = false;
-    }
-})
+        if(!menuActive){
+            menuHambur.classList.add("active")
+            menuActive = true;
+        } else {
+            menuHambur.classList.remove("active");            
+            menuActive = false;
+        }
+    })
 
 home.addEventListener('click',e=>{
     history.pushState({
@@ -93,7 +93,6 @@ series.addEventListener('click',e=>{
     })
 
 
-
 const viewing = ()=>{
 
     const coincidencia = catalogo.filter(item=>("/"+item.id === window.location.pathname
@@ -104,7 +103,6 @@ const viewing = ()=>{
             location.reload()
         }
     })
-    
     
     if(history.length === 1){
         content.innerHTML = Home();
@@ -227,7 +225,6 @@ viewing()
 
 const inputsRegister = document.querySelectorAll("#form-register input")
 const alertForm = document.getElementById("alert-form");
-
 
 const validarForm = (e)=>{
     switch(e.target.name){
