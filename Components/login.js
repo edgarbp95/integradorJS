@@ -72,7 +72,7 @@ const Login = ()=>{
           </div>
     
           <!-- Submit button -->
-          <button type="submit" class="btn btn-dark btn-block mb-4 w-25 button-center mt-5">Registrarse</button>
+          <button type="submit" class="btn btn-dark btn-block mb-4 w-50 button-center mt-5">Registrarse</button>
     
           <!-- Register buttons -->
           <div class="text-center">
@@ -147,7 +147,7 @@ const Login = ()=>{
           </div>
     
           <!-- Submit button -->
-          <button type="submit" class="btn btn-dark btn-block mb-3 w-25 button-center">Registrarse</button>
+          <button type="submit" class="btn btn-dark btn-block mb-3 w-50 button-center">Registrarse</button>
         </form>
       </div>
     </div>
