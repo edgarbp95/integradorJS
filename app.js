@@ -151,7 +151,7 @@ const viewing = ()=>{
         }
 
         botonBuscar.addEventListener("click",()=>{
-            let valorBusqueda = buscador.value
+            let valorBusqueda = buscador.value.toLowerCase()
             const seriesFiltro = document.getElementById("series-filtro")
             accion.checked = false;
             drama.checked = false;
