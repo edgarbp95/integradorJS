@@ -67,6 +67,18 @@ const expresiones ={
     correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/, // Correo
     }
 
+const menuHambur = document.querySelector(".menu-hambur")
+let menuActive = false;
+menuHambur.addEventListener("click",()=>{
+    if(!menuActive){
+        menuHambur.classList.add("active")
+        menuActive = true;
+    } else {
+        menuHambur.classList.remove("active");            
+        menuActive = false;
+    }
+})
+
 home.addEventListener('click',e=>{
     history.pushState({
         page:'Home'
@@ -171,7 +183,7 @@ const viewing = ()=>{
         let templateSeries= 
         `
           <div class="container">
-              <div class="p-5 bg-transparent rounded-3">
+              <div class="p-1 py-3 bg-transparent rounded-3">
               <div class="img-serie">
                   <img class="rounded-3" src=${coincidencia[0].url}>
               </div>
@@ -181,7 +193,7 @@ const viewing = ()=>{
               <div class="col-md-6">
                   <div class="h-100 p-5 text-bg-dark rounded-3">
                   <h2>${coincidencia[0].nombre}</h2>
-                  <p>${coincidencia[0].descripcion}</p>
+                  <p class="">${coincidencia[0].descripcion}</p>
                   </div>
               </div>
               <div class="col-md-6">

@@ -76,7 +76,7 @@ const Home = () =>{
     <div class="banner">
         
         <section id="banner" class="py-5 text-center container">
-          <div class="row py-lg-5">
+          <div class="row py-lg-5 ">
             <div class="col-lg-6 col-md-8 mx-auto">
               <h1 class="fw-light text-white">Unete a una comunidad activa</h1>
               <p class="lead text-white">Encuentra información detallada de tus series y peliculas favoritas. Comparte tu valoración y ayuda a otros wikinautas a encontrar el mejor contenido.</p>

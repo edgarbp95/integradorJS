@@ -75,19 +75,31 @@ const Series = () =>{
     let templateSeries= 
     `
     <div class="container ">
-       <div>
+       <div class="d-flex flex-column">
        <h2 class="py-4">Encuentra tu serie favorita</h2>
-        <div class="form-buscador">
-            <input id="buscador" name="buscador" type="text" placeholder="Ingresa un nombre...">
-            <button id="buscarSerie">Buscar</button>
-            <label for="accion">Acción:</label>
-            <input class="input-filtro" id="accion" name="accion" type="checkbox">
-            <label for="drama">Drama:</label>
-            <input class="input-filtro" id="drama" name="drama" type="checkbox">
-            <label for="suspenso">Suspenso:</label>
-            <input class="input-filtro" id="suspenso" name="suspenso" type="checkbox">
-            <label for="fantasia">Fantasia:</label>
-            <input class="input-filtro" id="fantasia" name="fantasia" type="checkbox">
+        <div class="form-buscador d-flex flex-column">
+            <div>
+                <input id="buscador" name="buscador" type="text" placeholder="Ingresa un nombre...">
+                <button id="buscarSerie">Buscar</button>
+            </div>
+            <div class="d-flex">
+            <div>
+                <label for="accion">Acción:</label>
+                <input class="input-filtro" id="accion" name="accion" type="checkbox">
+            </div>
+            <div>
+                <label for="drama">Drama:</label>
+                <input class="input-filtro" id="drama" name="drama" type="checkbox">
+            </div>
+            <div>
+                <label for="suspenso">Suspenso:</label>
+                <input class="input-filtro" id="suspenso" name="suspenso" type="checkbox">
+            </div>
+            <div>
+                <label for="fantasia">Fantasia:</label>
+                <input class="input-filtro" id="fantasia" name="fantasia" type="checkbox">
+            </div>
+            </div>
         </div>
        </div>
        <div id="series-filtro" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 py-4">${seriesHT}</div>
