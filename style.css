@@ -83,7 +83,7 @@
 
 .button-card{
   position: absolute;
-  width: 100px;
+  
   bottom: 20px;
   right: 20px;
 }
@@ -118,4 +118,49 @@
 
 .img-serie img{
   width: 70%;
+}
+
+.form-card{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  height: 65vh;
+}
+
+#alert-form{
+  display: none;
+}
+
+.form-buscador{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.form-buscador button{
+  margin-right: 30px;
+}
+
+.input-filtro{
+  margin-right: 15px;
+  
+}
+
+.nav-pills .nav-link.active,
+.show>.nav-pills .nav-link{
+    background: #262626 !important
+}
+
+.form-check-input[type=checkbox]:checked {
+  background-image: none;
+  background-color: #262626 !important;
+}
+
+.form-check-input:checked {
+  border-color: #262626 !important;
+}
+
+.button-center{
+  margin: 0 auto;
 }
