@@ -176,6 +176,8 @@ label{
 
   .form-card{
     width: 80%;
+    margin-top: 20px;
+    height: 100%;
   }
 
   #banner h1{
