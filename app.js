@@ -152,7 +152,6 @@ const viewing = ()=>{
 
         botonBuscar.addEventListener("click",()=>{
             let valorBusqueda = buscador.value.toLowerCase()
-            const seriesFiltro = document.getElementById("series-filtro")
             accion.checked = false;
             drama.checked = false;
             suspenso.checked = false;
@@ -178,6 +177,10 @@ const viewing = ()=>{
     
     } else if(window.location.pathname === "/login"){
         content.innerHTML = Login();
+        const formRegister = document.getElementById("form-register");
+        formRegister.addEventListener("submit",(e)=>{
+            e.preventDefault()
+        })
     } else if(window.location.pathname === "/"+coincidencia[0].id){
         
         let templateSeries= 
@@ -216,14 +219,12 @@ login.addEventListener('click',e=>{
     history.pushState({
         page:'Login'
       },'Login','/login');
-
-
     });
 
   
 viewing()
 
-const formRegister = document.getElementById("form-register");
+
 const inputsRegister = document.querySelectorAll("#form-register input")
 const alertForm = document.getElementById("alert-form");
 
@@ -295,11 +296,9 @@ inputsRegister.forEach(input=>{
 
 })
 
-// formRegister.addEventListener("submit",(e)=>{
-//     e.preventDefault()
-// })
+ 
 
-//
+
 
 
 
